@@ -3,7 +3,7 @@
 /*
  * Author       : Anurag
  * email        : anurag.zxcv@gmail.com
- * File name            : QXMLparser.c
+ * File name            : QXMLParser.c
  * File description     : 
  * Version              : 0.1.0
  * Known issues         : Only findes the first occurrence
@@ -44,7 +44,6 @@ int QXMLparse(tXmlParser* sXmlPtr, const char* sKey, char* sValue)
 		}
 		if( (*(psStartBkmrk-1) == '<') && (*(psStartBkmrk + strlen(sKey)) == '>') )
 		{
-			psStartBkmrk += (strlen(sKey)+1);
 			break;
 		}
 		psStartBkmrk = NULL;	
@@ -61,6 +60,7 @@ int QXMLparse(tXmlParser* sXmlPtr, const char* sKey, char* sValue)
 				( *(psStopBkmrk-1) == '/' ) &&
 				( *(psStopBkmrk + strlen(sKey)) == '>' ) )
 		{
+		        psStartBkmrk += (strlen(sKey)+1);
 			psStopBkmrk -= 2; 
 		}
 	}
