@@ -3,12 +3,14 @@
 /*
  * Author       : Anurag
  * email        : anurag.zxcv@gmail.com
+ * Library name         : Quick XML Parser
  * File name            : QXMLParser.c
  * File description     : 
- * Version              : 0.1.0
+ * Version              : 0.1.1
  * Known issues         : Only findes the first occurrence
  * Updates
- *                      created 20th Aug 2019 v0.1.0
+ *                      created         20th Aug 2019 v0.1.0
+ *                      update          21th Aug 2019 v0.1.1
 */
 
 
