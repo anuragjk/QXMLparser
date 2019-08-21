@@ -32,6 +32,7 @@ int QXMLparse(tXmlParser* sXmlPtr, const char* sKey, char* sValue)
 	char* 	psStartBkmrk 	= NULL;
 	char*	psStopBkmrk	= NULL;
 
+        fseek(sXmlPtr->fp, 0, SEEK_SET); 
 
 	while(fgets(eachLine, sizeof(eachLine), sXmlPtr->fp ))
 	{
